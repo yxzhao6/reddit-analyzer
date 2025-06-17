@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit Q&A Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <div id="chat-box">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Ask a question about a subreddit (e.g., @r/learnpython What are some good resources for beginners?)">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
